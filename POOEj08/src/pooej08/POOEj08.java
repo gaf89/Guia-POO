@@ -55,6 +55,7 @@ public class POOEj08 {
         c1.setLongitud(longitud);
                 
         System.out.println("Cantidad de vocales: "+cs.mostrarVocales(c1));
+        System.out.println("Cantidad de vocales: "+cs.mostrarVocales2(c1));
         
         cs.invertirFrase(c1);
         

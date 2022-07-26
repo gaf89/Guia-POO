@@ -64,6 +64,22 @@ public class CadenaServicio {
         return cantVocales;
     }
     
+    public int mostrarVocales2(Cadena c) {
+        String frase = c.getFrase();
+        int longitud = c.getLongitud();
+        String letra;
+        int cantVocales = 0;
+        
+        for (int i = 0; i < longitud; i++) {
+            letra = frase.substring(i, i+1);
+            if ("a".equals(letra) || "e".equals(letra) || "i".equals(letra) || "o".equals(letra) || "u".equals(letra)) {
+                cantVocales++;
+            }
+        }        
+        
+        return cantVocales;
+    }
+    
     public void invertirFrase(Cadena c) {
         String frase, fraseInvertida, letra;
         int longitud = c.getLongitud()-1;

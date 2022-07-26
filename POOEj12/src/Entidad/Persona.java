@@ -62,5 +62,4 @@ public class Persona {
         return "Persona{" + "nombre=" + nombre + ", fechaDeNacimiento=" + fechaDeNacimiento + '}';
     }
     
-    
 }

@@ -32,6 +32,7 @@ public class POOEj10 {
                
         for (int i = 0; i < 50; i++) {
             Arrays.fill(A, i,i+1,(Math.random() * 10));
+            //A[i] = Math.random() * 10;
         }
         
         System.out.println("Arreglo A:");
@@ -40,7 +41,8 @@ public class POOEj10 {
         Arrays.sort(A);
         
         for (int i = 0; i < 10; i++) {
-            Arrays.fill(B, i, i+1, A[i]);            
+            Arrays.fill(B, i, i+1, A[i]);
+            //B[i] = A[i];
         }
         
         Arrays.fill(B, 10, 19, 0.5);

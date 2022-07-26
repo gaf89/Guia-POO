@@ -5,6 +5,9 @@
  */
 package pooejextra03;
 
+import Entidad.Raices;
+import Servicio.RaicesServicio;
+
 /**
  *
  * @author Gaston
@@ -37,6 +40,15 @@ public class POOEjExtra03 {
      */
     public static void main(String[] args) {
         
+        RaicesServicio rs = new RaicesServicio();
+        /*Ejemplos:
+        1) a = 3, b = -11, c = -4 (3, -11, -4) 2 soluciones
+        2) a = 1, b = -8, c = 16 (1, -8, 16)   1 solución
+        3) a = 1, b = -4, c = 10 (1 , -4, 10)  Sin solución */
+        
+        Raices r1 = new Raices(1, -4, 10);
+        
+        rs.calcular(r1);
         
     }
     
