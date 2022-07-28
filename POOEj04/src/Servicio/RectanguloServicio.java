@@ -24,10 +24,10 @@ Superficie = base * altura / Perímetro = (base + altura) * 2.
 */
 public class RectanguloServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public Rectangulo crearRectangulo(){
-        
-        Scanner leer = new Scanner(System.in);
-        
+                
         System.out.println("Introducir la altura del rectángulo:");
         int alt = leer.nextInt();
         System.out.println("Introducir la base del rectángulo:");

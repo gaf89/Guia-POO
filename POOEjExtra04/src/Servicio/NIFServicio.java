@@ -24,17 +24,18 @@ un array (vector) de caracteres la posición que corresponda al resto de la divi
 obtener la letra correspondiente. La tabla de caracteres es la siguiente:
 */
 public class NIFServicio {
+    Scanner leer = new Scanner(System.in);
+    
     /*• Método crearNif(): le pide al usuario el DNI y con ese DNI calcula la letra que le
     corresponderá. Una vez calculado, le asigna la letra que le corresponde según el
     resultado del calculo. */
     
     public NIF crearNif() {
-        Scanner leer = new Scanner(System.in);
-        
+               
         System.out.println("Intruducir número de DNI: ");
         long dni = leer.nextLong();
         
-        String[] vector = {"T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"};
+        String vector[] = {"T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"};
         
         String letra = vector[(int) dni % 23];
       

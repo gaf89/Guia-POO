@@ -22,9 +22,10 @@ calcular la distancia entre dos puntos consulte el siguiente link:
 */
 public class PuntosServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public Puntos crearPuntos() {
-        Scanner leer = new Scanner(System.in);
-        
+                
         System.out.println("Introducir las coordenadas de los dos puntos");
         System.out.println("Punto 1");
         System.out.print("Eje X: ");

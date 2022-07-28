@@ -22,7 +22,7 @@ No ha acertado. Intente adivinarlo introduciendo otro mes: agosto
 */
 public class Meses {
     
-    public String[] mes = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+    public String mes[] = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
     public String mesSecreto = mes[6];
 
     public Meses() {

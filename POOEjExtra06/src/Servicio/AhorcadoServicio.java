@@ -22,6 +22,8 @@ parámetros que sean necesarios:
 */
 public class AhorcadoServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     /*• Metodo crearJuego(): le pide la palabra al usuario y cantidad de jugadas máxima. Con
 la palabra del usuario, pone la longitud de la palabra, como la longitud del vector.
 Después ingresa la palabra en el vector, letra por letra, quedando cada letra de la
@@ -29,8 +31,7 @@ palabra en un índice del vector. Y también, guarda en cantidad de jugadas máx
 valor que ingresó el usuario y encontradas en 0. */
     
     public Ahorcado crearJuego() {
-        Scanner leer = new Scanner(System.in);
-        
+                
         System.out.println("Introducir la palabra a adivinar: ");
         String palabra = "programar"; // leer.next();
         System.out.print("Introducir cantidad de jugadas máximas: ");
@@ -59,7 +60,6 @@ buscar como se usa el vector.length.*/
 letra ingresada es parte de la palabra o no. También informará si la letra estaba o no.*/
     
     public void buscar(Ahorcado a) {
-        Scanner leer = new Scanner(System.in);
         
         System.out.print("Ingrese una letra: ");
         String letra = leer.next();

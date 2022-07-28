@@ -24,9 +24,9 @@ e) Método perimetro(): para calcular el perímetro (𝐏𝐞𝐫𝐢𝐦𝐞�
 */
 public class CircunferenciaServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public Circunferencia crearCircunferencia(){
-        
-        Scanner leer = new Scanner(System.in);
                 
         System.out.println("Introducir el radio de la circunferencia:");
         double radio = leer.nextDouble();

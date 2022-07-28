@@ -32,8 +32,10 @@ anterior.
 */
 public class PersonaServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public Persona crearPersona() {
-        Scanner leer = new Scanner(System.in);
+        
         
         System.out.println("Introducir datos");
         System.out.print("Nombre: ");
@@ -75,8 +77,7 @@ public class PersonaServicio {
     }
     
     public boolean menorQue(Persona p) {
-        Scanner leer = new Scanner(System.in);
-        
+               
         int edad = calcularEdad(p);
         
         System.out.println("Introducir una edad: ");

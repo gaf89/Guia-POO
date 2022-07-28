@@ -37,6 +37,8 @@ ingresa el usuario y devuelve verdadero si la contiene y falso si no.
 */
 public class CadenaServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public int mostrarVocales(Cadena c) {
         
         String frase = c.getFrase();
@@ -97,8 +99,7 @@ public class CadenaServicio {
     }
     
     public void vecesRepetido(Cadena c) {
-        Scanner leer = new Scanner(System.in);
-        
+                
         String frase, letra, letraRep;
         int longitud = c.getLongitud();
         int contRep = 0;
@@ -118,8 +119,7 @@ public class CadenaServicio {
     }
     
     public void compararLongitud(Cadena c) {
-        Scanner leer = new Scanner(System.in);
-        
+                
         System.out.println("");
         System.out.println("Introducir una nueva frase");
         String frase = leer.nextLine();
@@ -130,8 +130,7 @@ public class CadenaServicio {
     }
     
     public void unirFrases(Cadena c) {
-        Scanner leer = new Scanner(System.in);
-                        
+                                
         System.out.println("");
         System.out.println("Introducir la frase a unir");
         String fraseNueva = leer.nextLine();
@@ -140,8 +139,7 @@ public class CadenaServicio {
     }
     
     public void reemplazar(Cadena c) {
-        Scanner leer = new Scanner(System.in);
-        
+              
         String frase, letra, fraseNueva;
         int longitud = c.getLongitud();
         frase = c.getFrase();
@@ -163,8 +161,7 @@ public class CadenaServicio {
     }
     
     public boolean contiene(Cadena c) {
-        Scanner leer = new Scanner(System.in);
-        
+              
         String frase, letra;
         frase = c.getFrase();
         int longitud = c.getLongitud();

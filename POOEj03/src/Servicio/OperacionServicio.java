@@ -31,9 +31,9 @@ informa al usuario. Si no, se hace la división y se devuelve el resultado al ma
 */
 public class OperacionServicio {
  
+    Scanner leer = new Scanner(System.in);
+    
     public Operacion crearOperacion(){
-        
-        Scanner leer = new Scanner(System.in);
         
         System.out.println("Introducir 2 números:");
         System.out.print("Numero 1: ");

@@ -31,9 +31,9 @@ h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
 */
 public class CuentaServicio {
     
-    public Cuenta crearCuenta(){
+    Scanner leer = new Scanner(System.in);
     
-        Scanner leer = new Scanner(System.in);
+    public Cuenta crearCuenta(){
         
         System.out.println("Introducir Número de Cuenta:");
         int numeroCuenta = leer.nextInt();
@@ -52,8 +52,6 @@ public class CuentaServicio {
     
     public double ingresar(Cuenta c){
         
-        Scanner leer = new Scanner(System.in);
-        
         System.out.println("Ingreso de saldo");
         System.out.println("Introducir Monto a Ingresar:");
         double ingreso = leer.nextDouble();
@@ -69,9 +67,7 @@ public class CuentaServicio {
     
      public double retirar(Cuenta c){
         
-        Scanner leer = new Scanner(System.in);
-        
-         System.out.println("Retiro de Sado");
+        System.out.println("Retiro de Sado");
         System.out.println("Introducir Monto a Retirar:");
         double retiro = leer.nextDouble();
         
@@ -90,8 +86,7 @@ public class CuentaServicio {
      }
      
      public void extraccionRapida(Cuenta c){
-        Scanner leer = new Scanner(System.in);
-        
+     
         System.out.println("Extracción Rápida");
         System.out.println("Introducir Monto a Retirar:");
         double retiro = leer.nextDouble();

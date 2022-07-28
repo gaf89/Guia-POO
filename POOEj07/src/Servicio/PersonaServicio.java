@@ -44,10 +44,10 @@ también calcularemos un porcentaje de cuantos son mayores de edad y cuantos men
 */
 public class PersonaServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public Persona crearPersona(){
-        
-        Scanner leer = new Scanner(System.in);
-        
+                
         System.out.println("Introducir nombre: ");
         String nombre = leer.next();
         

@@ -6,6 +6,7 @@
 package pooejextra05;
 
 import Entidad.Meses;
+import Servicio.MesesServicio;
 import java.util.Scanner;
 
 /**
@@ -35,7 +36,14 @@ public class POOEjExtra05 {
         
         Meses m1 = new Meses();
         
-        String mesSecreto = m1.getMesSecreto();
+        MesesServicio ms = new MesesServicio();
+        
+        ms.adivinaElMes(m1);
+        
+        
+        
+        
+        /*String mesSecreto = m1.getMesSecreto();
         
         System.out.println("Adivine el mes secrero");
         System.out.print("Introduzca el nombre del mes en minúsculas: ");
@@ -45,12 +53,12 @@ public class POOEjExtra05 {
         respuesta = leer.next();
         if (respuesta.equals(mesSecreto)) {
             System.out.println("");
-            System.out.println("¡¡Ha acertado!!");
+            System.out.println("¡¡Has acertado!!");
             break;
         } else {
             System.out.print("No ha acertado. Intente adivinarlo introduciendo otro mes: ");                 
         }
-        } while (!respuesta.equals(mesSecreto));
+        } while (!respuesta.equals(mesSecreto));*/
     }
     
 }

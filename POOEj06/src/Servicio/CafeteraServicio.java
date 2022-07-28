@@ -31,6 +31,8 @@ recibe y se añade a la cafetera la cantidad de café indicada.
 */
 public class CafeteraServicio {
     
+    Scanner leer = new Scanner(System.in);
+    
     public void llenarCafetera(Cafetera c){
         
         c.setCantidadActual(c.getCapacidadMaxima());
@@ -38,8 +40,6 @@ public class CafeteraServicio {
     }
     
     public void servirTaza(Cafetera c){
-        
-        Scanner leer = new Scanner(System.in);
         
         System.out.println("Ingrese el tamaño de la taza(ml) a llenar:");
         int taza = leer.nextInt();
@@ -63,8 +63,6 @@ public class CafeteraServicio {
     }
     
     public void agregarCafe(Cafetera c){
-        
-        Scanner leer = new Scanner(System.in);
         
         System.out.println("Introducir la cantidad de café(ml) a agregar:");
         int cafeAgreagar = leer.nextInt();
