@@ -31,8 +31,9 @@ public class POOEj09 {
      */
     public static void main(String[] args) {
        
-        Matematica m1 = new Matematica();
+        //Matematica m1 = new Matematica();
         MatematicaServicio ms = new MatematicaServicio();
+        Matematica m1 = ms.crearMatematica();
         
         m1.setNumero1(Math.random()*10);
         m1.setNumero2(Math.random()*10);

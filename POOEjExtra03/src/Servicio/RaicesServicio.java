@@ -76,7 +76,7 @@ soluciones. Nota: Formula ecuación 2o grado: (-b±√((b^2)-(4*a*c)))/(2*a) Sol
 
         if (tieneRaices(r)) {
             formula = Math.sqrt(Math.pow(b, 2) - (4 * a * c));
-
+            System.out.println("La ecuación tiene 2 soluciones");
             System.out.println("Solución 1: " + ((-b + formula)) / (2 * a));
             System.out.println("Solución 2: " + ((-b - formula)) / (2 * a));
         }
@@ -93,6 +93,7 @@ en el caso en que se tenga una única solución posible. */
 
         if (tieneRaiz(r)) {
             formula = -b / (2 * a);
+            System.out.println("La ecuacion tiene una solución");
             System.out.println("La solución es: " + formula);
         }
     }
@@ -104,18 +105,11 @@ de no existir solución, se mostrará un mensaje. */
 
     public void calcular(Raices r) {
 
-        if (tieneRaices(r)) {
-            System.out.println("La ecuación tiene 2 soluciones");
-            obtenerRaices(r);
-        } else {
-            if (tieneRaiz(r)) {
-                System.out.println("La ecuacion tiene una solución");
-                obtenerRaiz(r);
-            } else {
-                System.out.println("No Existe solución para la ecuación");
-            }
-
+        obtenerRaices(r);
+        obtenerRaiz(r);
+        
+        if (getDiscriminante(r) < 0) {
+            System.out.println("No Existe solución para la ecuación");
         }
-
     }
 }

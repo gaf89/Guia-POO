@@ -32,8 +32,9 @@ valor que ingresó el usuario y encontradas en 0. */
     
     public Ahorcado crearJuego() {
                 
-        System.out.println("Introducir la palabra a adivinar: ");
-        String palabra = "programar"; // leer.next();
+        System.out.print("Introducir la palabra a adivinar: ");
+        String palabra = leer.next();
+        System.out.println("");
         System.out.print("Introducir cantidad de jugadas máximas: ");
         int jugadas = leer.nextInt();
         int longitud = palabra.length();
@@ -112,6 +113,32 @@ busque una letra que no esté, se le restará uno a sus oportunidades.*/
         
         return encontradas;
     }
+    
+    /*public boolean encontradas(Ahorcado a) {
+        String letra = a.getLetra();
+        
+        boolean encontradas = false;
+        String[] palabra = a.getPalabra();
+        int longitud = longitud(a);
+        int cantEncotrados = 0;
+                
+        for (int i = 0; i < longitud; i++) {
+            if (palabra[i].equals(letra)) {
+                cantEncotrados++;
+                encontradas = true;
+            }else{
+                encontradas = false;
+            }
+            
+        }
+        
+        System.out.println("Número de letras (encontradas/faltantes): ("+a.getLetrasEncontradas()+"/"+(longitud-a.getLetrasEncontradas())+")");
+        
+        //encontradas = cantEncotrados > 0;
+        
+        return encontradas;
+    }*/
+    
     
     /* • Método intentos(): para mostrar cuantas oportunidades le queda al jugador.*/
     

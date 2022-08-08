@@ -46,7 +46,7 @@ public class POOEjExtra03 {
         2) a = 1, b = -8, c = 16 (1, -8, 16)   1 solución
         3) a = 1, b = -4, c = 10 (1 , -4, 10)  Sin solución */
         
-        Raices r1 = new Raices(1, -4, 10);
+        Raices r1 = new Raices(1 , -4, 10);
         
         rs.calcular(r1);
         

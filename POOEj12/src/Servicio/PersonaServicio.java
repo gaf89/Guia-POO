@@ -24,9 +24,7 @@ fecha de nacimiento debe guardarse en un Date y los guarda en el objeto.
 • Escribir un método calcularEdad() a partir de la fecha de nacimiento ingresada. Tener
 en cuenta que para conocer la edad de la persona también se debe conocer la fecha
 actual.
-• Agregar a la clase el método menorQue(int edad) que recibe como parámetro otra
-edad y retorna true en caso de que el receptor tenga menor edad que la persona que
-se recibe como parámetro, o false en caso contrario.
+
 • Metodo mostrarPersona(): este método muestra la persona creada en el método
 anterior.
 */
@@ -76,6 +74,11 @@ public class PersonaServicio {
         return edad;
     }
     
+    /*
+    • Agregar a la clase el método menorQue(int edad) que recibe como parámetro otra
+edad y retorna true en caso de que el receptor tenga menor edad que la persona que
+se recibe como parámetro, o false en caso contrario.
+    */
     public boolean menorQue(Persona p) {
                
         int edad = calcularEdad(p);

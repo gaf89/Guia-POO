@@ -25,6 +25,11 @@ Antes de calcular la raíz cuadrada se debe obtener el valor absoluto del númer
  */
 public class MatematicaServicio {
 
+    public Matematica crearMatematica() {
+    
+    return new Matematica();
+    }
+    
     public String devorverMayor(Matematica m) {
         String mayor;
         double num1 = m.getNumero1();
